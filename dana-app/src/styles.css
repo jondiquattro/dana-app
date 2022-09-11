@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+    font-family: "Ostrich";
+    src: local("Ostrich"), url(./assets/fonts/ostrich-sans/ostrich-regular.ttf) format("truetype");
+
+}
+
+
+@media screen and (min-width: 1000px) {
+    .bodyroot {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
