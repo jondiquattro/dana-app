@@ -6,10 +6,25 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<app-tabs></app-tabs>
-<div style="min-width: 350px;" class="bodyroot">
-  <app-hero></app-hero>
-  <app-contact-me></app-contact-me>
+<div class="container" [ngSwitch]="currentBreakpoint">
+  <div class="large" *ngSwitchCase="Breakpoints.Large">
+    <app-tabs></app-tabs>
+  </div>
+  <div class="medium" *ngSwitchCase="Breakpoints.Medium">
+    <app-tabs></app-tabs>
+  </div>
+  <!-- <div class="small" *ngSwitchCase="Breakpoints.Small">
+    <app-tabs></app-tabs>
+  </div> -->
+  <div class="landscape" *ngSwitchCase="Breakpoints.HandsetLandscape">
+    <app-tabs></app-tabs>
+  </div>
+  <div class="portrait" *ngSwitchCase="Breakpoints.HandsetPortrait">
+    <app-tabs></app-tabs>
+  </div>
+  <div class="default" *ngSwitchDefault>
+    <app-tabs></app-tabs>
+  </div>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

@@ -1,0 +1,26 @@
+.large {
+    width: 100%;
+    height: 100%;
+}
+
+.medium {
+    width: 100%;
+    height: 100%;
+}
+
+
+.landscape {
+    text-align: center;
+    width: 959px;
+    height: 100%;
+}
+
+.portrait {
+    width: 599px;
+    height: 100%;
+}
+
+.default {
+    width: 100%;
+    height: 100%;
+}
