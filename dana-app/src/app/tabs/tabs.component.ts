@@ -41,6 +41,7 @@ export class NavBarComponent {
     }
     else if (this.breakpointObserver.isMatched(Breakpoints.HandsetPortrait)) {
       console.log('portrait')
+      this.align = 'iphone-portrait';
       this.currentBreakpoint = Breakpoints.HandsetPortrait;
     }
   }
