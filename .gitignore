@@ -105,3 +105,4 @@ dist
 
 
 ./dana-app/src/scripts/dana.pem
+./dana-app/src/scripts/*

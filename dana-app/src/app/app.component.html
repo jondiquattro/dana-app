@@ -9,21 +9,26 @@
 <div class="container" [ngSwitch]="currentBreakpoint">
   <div class="large" *ngSwitchCase="Breakpoints.Large">
     <app-tabs></app-tabs>
+    <app-contact-me></app-contact-me>
   </div>
   <div class="medium" *ngSwitchCase="Breakpoints.Medium">
     <app-tabs></app-tabs>
+    <app-contact-me></app-contact-me>
   </div>
   <!-- <div class="small" *ngSwitchCase="Breakpoints.Small">
     <app-tabs></app-tabs>
   </div> -->
   <div class="landscape" *ngSwitchCase="Breakpoints.HandsetLandscape">
     <app-tabs></app-tabs>
+    <app-contact-me></app-contact-me>
   </div>
   <div class="portrait" *ngSwitchCase="Breakpoints.HandsetPortrait">
     <app-tabs></app-tabs>
+    <app-contact-me></app-contact-me>
   </div>
   <div class="default" *ngSwitchDefault>
     <app-tabs></app-tabs>
+    <app-contact-me></app-contact-me>
   </div>
 </div>
 

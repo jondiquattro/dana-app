@@ -31,7 +31,6 @@
     background-color: #637083;
     border-bottom: 5px solid black;
     width: 100%;
-    padding-left: 20px;
 }
 
 .left {
@@ -53,4 +52,9 @@
     background-color: #637083;
     border-bottom: 5px solid black;
     width: 100%;
+    padding-left: 20px;
+}
+
+a:visited {
+    color: gray;
 }
