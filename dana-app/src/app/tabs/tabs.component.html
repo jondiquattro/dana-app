@@ -1,6 +1,64 @@
-<div class="{{align}}">
-    <div class="tab-link">HOME</div>
-    <div class="tab-link">CONTACT</div>
-    <div class="tab-link"><a href="https://squareup.com/appointments/book/tmzaecc59xwg84/LDFP2EPZTCMKV/start">WORK WITH
-            ME</a></div>
-</div>
+<nav class="{{align}}" *ngIf="renderTabs(); else showBurger">
+    <div style="display: flex;">
+        <a routerLink="/home" ariaCurrentWhenActive="page" class="tab-link" (mouseenter)="over($event, 'home')"
+            (mouseleave)="out($event)">HOME
+        </a>
+        <div routerLink="/contact-me" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link">CONTACT
+            DANA
+        </div>
+        <a class="tab-link" href="https://squareup.com/appointments/book/tmzaecc59xwg84/LDFP2EPZTCMKV/start">WORK
+            WITH ME</a>
+        <a class="tab-link">GOD'S GOOD FOODS</a>
+        <a class="tab-link">FREE HEALTH ASSESSMENT</a>
+    </div>
+
+
+    <!-- <div><button>FB</button>
+        <i class='fab fa-instagram'></i>
+        <mat-icon>facebook</mat-icon>
+        <button>FBG</button>
+
+    </div> -->
+</nav>
+
+<ng-template #showBurger class="{{align}}">
+
+
+    <div *ngIf="!isActive; else closeButton" style="display: flex;">
+        <button (click)="toggle()">
+            <mat-icon>menu</mat-icon>
+
+        </button>
+        <!-- <div>
+            <button>FB</button>
+            <mat-icon>Instagram</mat-icon>
+            <button>FBG</button>
+        </div> -->
+    </div>
+
+
+    <app-popover [isActive]="isActive">
+        <ul>
+            <li>
+                <a routerLink="/home" ariaCurrentWhenActive="page" class="tab-link" (mouseenter)="over($event, 'home')"
+                    (mouseleave)="out($event)">HOME
+                </a>
+            </li>
+            <li>
+                <a routerLink="/contact-me" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link">
+                    CONTACT DANA</a>
+            </li>
+            <li> <a class="tab-link"
+                    href="https://squareup.com/appointments/book/tmzaecc59xwg84/LDFP2EPZTCMKV/start">WORK
+                    WITH ME</a></li>
+            <li> <a class="tab-link" href="">GOD'S GOOD FOODS</a></li>
+            <li> <a class="tab-link" href="https://form.jotform.com/223425903960052">FREE HEALTH ASSESSMENT</a></li>
+        </ul>
+    </app-popover>
+</ng-template>
+
+<ng-template #closeButton>
+    <button (click)="toggle()">
+        <mat-icon>closeButton</mat-icon>
+    </button>
+</ng-template>

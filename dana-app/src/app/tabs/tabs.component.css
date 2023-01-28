@@ -1,24 +1,29 @@
 .tab-links {
     display: flex;
     justify-content: center;
-    height: 64px;
+    height: 100px;
     font-size: 1.5em;
-    background-color: #637083;
+    /* background-color: #637083; */
+    background-color: #d7d8dd;
     border-bottom: 5px solid black;
     width: 100%;
 }
 
 .tab-link {
-    margin-right: 20px;
-    margin-top: 20px;
+    margin-right: 28px;
+    margin-top: 36px;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 24px;
 }
 
 .center {
     display: flex;
     justify-content: center;
-    height: 64px;
+    height: 100px;
     font-size: 1.5em;
-    background-color: #637083;
+    /* background-color: #637083; */
+    background-color: #d7d8dd;
     border-bottom: 5px solid black;
     width: 100%;
 }
@@ -26,9 +31,10 @@
 .iphone-landscape {
     display: flex;
     justify-content: center;
-    height: 64px;
+    height: 100px;
     font-size: 1.5em;
-    background-color: #637083;
+    /* background-color: #637083; */
+    background-color: #d7d8dd;
     border-bottom: 5px solid black;
     width: 100%;
 }
@@ -36,9 +42,10 @@
 .left {
     display: flex;
     justify-content: left;
-    height: 64px;
+    height: 100px;
     font-size: 1.5em;
-    background-color: #637083;
+    /* background-color: #637083; */
+    background-color: #d7d8dd;
     border-bottom: 5px solid black;
     width: 100%;
 }
@@ -47,14 +54,41 @@
 .iphone-portrait {
     display: flex;
     justify-content: left;
-    height: 64px;
+    height: 100px;
     font-size: 1.5em;
-    background-color: #637083;
+    /* background-color: #637083; */
+    background-color: #d7d8dd;
     border-bottom: 5px solid black;
     width: 100%;
     padding-left: 20px;
 }
 
+a:link {
+    color: #000;
+    text-decoration: none;
+
+}
+
 a:visited {
-    color: gray;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000;
+    color: #000;
+    text-decoration: none;
+}
+
+.tab-link:hover {
+    color: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
 }

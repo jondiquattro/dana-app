@@ -34,17 +34,21 @@ export class ContactMeComponent implements OnInit {
     if (this.breakpointObserver.isMatched(Breakpoints.Large)) {
       this.currentBreakpoint = Breakpoints.Large;
       this.textmode = "large";
+      console.log(this.currentBreakpoint);
     } else if (this.breakpointObserver.isMatched(Breakpoints.Medium)) {
       this.currentBreakpoint = Breakpoints.Medium;
       this.textmode = "large";
+      console.log(this.currentBreakpoint);
     } else if (this.breakpointObserver.isMatched(Breakpoints.HandsetLandscape)) {
       this.currentBreakpoint = Breakpoints.HandsetLandscape;
       this.textmode = "large";
+      console.log(this.currentBreakpoint);
     }
     else if (this.breakpointObserver.isMatched(Breakpoints.HandsetPortrait)) {
       this.align = 'iphone-portrait';
       this.textmode = "small";
       this.currentBreakpoint = Breakpoints.HandsetPortrait;
+      console.log(this.currentBreakpoint);
     }
   }
 }

@@ -1,0 +1,233 @@
+.image-chip:hover {
+    background-color: gray;
+}
+
+.image-container-small {
+    width: 100%;
+    height: 478px;
+    overflow-y: auto;
+}
+
+.image-container-large {
+    width: 100%;
+    height: 75%;
+    overflow-y: auto;
+}
+
+.offerings-small {
+    width: 500px;
+    font-size: 3.5vw;
+    margin-top: 42px;
+}
+
+.offerings-large {
+    width: 500px;
+    font-size: 2vw;
+    margin-top: 100px;
+}
+
+.offerings-box-small {
+    background-color: #f3f3f3;
+    /* width: 100%; */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.offerings-box-large {
+    background-color: #f3f3f3;
+    /* width: 100%; */
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.portrait-banner-text {
+    padding-top: 40px;
+    color: black;
+    font-size: 7.6em;
+    height: 94px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'ShadowsIntoLight'
+}
+
+.hero-text {
+    padding-top: 40px;
+    color: white;
+    font-size: 7.6em;
+}
+
+
+.scripture-text-large {
+    text-align: center;
+    position: absolute;
+    top: 42%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    color: white;
+    font-size: 4em;
+    line-height: 1;
+}
+
+.scripture-text-small {
+    text-align: center;
+    position: absolute;
+    top: 42%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+
+.bio-image-small {
+    height: 400px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url("../../assets/heroImage.jpg");
+}
+
+.bio-image-large {
+    height: 65vh;
+    max-width: 500px;
+    width: 50vw;
+    max-width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url("../../assets/heroImage.jpg");
+}
+
+.bio-text-small {
+    font-size: 3vw;
+    line-height: 4vw;
+    width: 25vw;
+}
+
+.bio-text-large {
+    max-width: 40vw;
+    /* font-size: 3vw; */
+    /* line-height: 4vw; */
+}
+
+.bio-text-box-small {
+    margin-left: 20px;
+    padding-right: 8vw;
+}
+
+.bio-text-box-large {
+    margin-left: 20px;
+    padding-right: 8vw;
+    margin-top: 4vh;
+    font-size: larger;
+}
+
+.bio-title-large {
+    font-size: 4vw;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.bio-title-small {
+    font-size: 7vw;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+
+.new-hero-image-small {
+    height: 400px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url("../../assets/20220729_092711.jpg");
+}
+
+.new-hero-image-large {
+    height: 80vh;
+    width: 60vw;
+    max-width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url("../../assets/20220729_092711.jpg");
+}
+
+.hero-title-large {
+    font-size: 2.8em;
+    line-height: 20px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.hero-title-small {
+    font-size: 4vw;
+    margin-bottom: 20px;
+
+}
+
+.image-content-large {
+    display: flex;
+    justify-content: center;
+}
+
+.image-content-small {
+    display: flex;
+    justify-content: center;
+}
+
+
+.jf-before-image-small {
+    height: 400px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url("../../assets/JFbefore.jpg");
+}
+
+.jf-before-image-large {
+    height: 80vh;
+    width: 60vw;
+    max-width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url("../../assets/JFbefore.jpg");
+}
+
+
+.jf-after-image-small {
+    height: 400px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url("../../assets/JFAfter.jpg");
+}
+
+.jf-after-image-large {
+    height: 80vh;
+    width: 60vw;
+    max-width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url("../../assets/JFAfter.jpg");
+}
