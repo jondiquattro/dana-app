@@ -4,9 +4,12 @@
     height: 100px;
     font-size: 1.5em;
     /* background-color: #637083; */
-    background-color: #d7d8dd;
+    /* background-color: #d7d8dd; */
+    background-color: #ca9b81;
     border-bottom: 5px solid black;
     width: 100%;
+    /* color: #3f2f2f; */
+    color: #000;
 }
 
 .tab-link {
@@ -23,7 +26,10 @@
     height: 100px;
     font-size: 1.5em;
     /* background-color: #637083; */
-    background-color: #d7d8dd;
+    /* background-color: #d7d8dd; */
+    /* color: #3f2f2f; */
+    color: #000;
+    background-color: #ca9b81;
     border-bottom: 5px solid black;
     width: 100%;
 }
@@ -64,29 +70,33 @@
 }
 
 a:link {
+    /* color: #3f2f2f; */
     color: #000;
     text-decoration: none;
 
 }
 
 a:visited {
+    /* color: #3f2f2f; */
     color: #000;
     text-decoration: none;
 }
 
 a:hover {
-    color: #000;
+    /* color: #000; */
+    /* color: #3f2f2f; */
+    color: #d7d8dd;
     text-decoration: none;
 }
 
 a:active {
     color: #000;
-    color: #000;
     text-decoration: none;
 }
 
 .tab-link:hover {
-    color: whitesmoke;
+    /* color: #000; */
+    color: aliceblue;
 }
 
 ul {
