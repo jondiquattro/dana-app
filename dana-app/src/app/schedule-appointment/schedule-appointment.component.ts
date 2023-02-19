@@ -4,14 +4,12 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { distinctUntilChanged } from 'rxjs/operators';
 
 const SCRIPT_PATH = './assets/js/calendly.js';
-
 @Component({
-  selector: 'app-contact-me',
-  templateUrl: './contact-me.component.html',
-  styleUrls: ['./contact-me.component.css']
+  selector: 'app-schedule-appointment',
+  templateUrl: './schedule-appointment.component.html',
+  styleUrls: ['./schedule-appointment.component.css']
 })
-export class ContactMeComponent implements OnInit {
-
+export class ScheduleAppointmentComponent implements OnInit {
   align: string = 'center';
   textmode: string = 'large';
   Breakpoints = Breakpoints;
@@ -23,13 +21,17 @@ export class ContactMeComponent implements OnInit {
       distinctUntilChanged()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) { }
+  constructor(private breakpointObserver: BreakpointObserver, private scripService: ScriptService, private renderer: Renderer2) { }
 
   ngOnInit(): void {
     this.breakpoint$.subscribe(() =>
       this.breakpointChanged()
     );
+
+    this.scripService.loadJsScript(this.renderer, SCRIPT_PATH);
   }
+
+
 
   private breakpointChanged() {
     if (this.breakpointObserver.isMatched(Breakpoints.Large)) {

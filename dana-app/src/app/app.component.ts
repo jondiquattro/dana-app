@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { distinctUntilChanged, tap } from 'rxjs/operators';
+import { ScriptService } from "./services/script.service";
+
+// const SCRIPT_PATH = './assets/js/calendly.js';
+// declare let gapi: any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'dana-app';
 
 
@@ -19,6 +23,7 @@ export class AppComponent {
     .pipe(
       distinctUntilChanged()
     );
+  init: any;
 
   constructor(private breakpointObserver: BreakpointObserver) { }
 
@@ -26,6 +31,9 @@ export class AppComponent {
     this.breakpoint$.subscribe(() =>
       this.breakpointChanged()
     );
+
+    // let ss = new ScriptService(document);
+    // ss.loadJsScript(this.renderer, SCRIPT_PATH);
   }
 
 

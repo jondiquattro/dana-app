@@ -24,6 +24,23 @@ body {
 
 }
 
+@font-face {
+    font-family: "Tangerine";
+    src: url(./assets/fonts/Tangerine-Regular.ttf);
+}
+
+
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/assets/fonts/Alegreya.ttf');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('/assets/fonts/PlayfairDisplay.ttf');
+}
+
 
 @media screen and (min-width: 1000px) {
     .bodyroot {

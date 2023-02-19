@@ -14,48 +14,47 @@
     overflow-y: auto;
 }
 
+.offerings-box-small {
+    display: flex;
+    font-size: 3.2vw;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* height: 100px; */
+    /* background-color: #f3f3f3; */
+}
+
 .offerings-small {
-    width: 500px;
-    font-size: 3.5vw;
-    margin-top: 42px;
+    margin-top: 20px;
 }
 
 .offerings-large {
-    width: 500px;
+    width: fit-content;
     font-size: 2vw;
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-right: 10vw;
 }
 
 .scripture-break-large {
-    font-size: .9vw;
-    margin-top: 100px;
+    font-size: 1.8vw;
+    margin-top: 20px;
+    font-family: 'Tangerine';
 }
 
-.offerings-middle-large {
-    font-size: 2vw;
-    margin-top: 100px;
-}
-
-.offerings-right-large {
-    font-size: 2vw;
-    margin-top: 100px;
-}
-
-
-.offerings-box-small {
-    background-color: #f3f3f3;
-    /* width: 100%; */
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    padding-left: 20px;
+.scripture-break-small {
+    font-size: 4vw;
+    font-family: 'Tangerine';
+    padding-left: 25px;
+    padding-right: 25px
 }
 
 .offerings-box-large {
-    background-color: #f3f3f3;
-    height: 200px;
+    /* background-color: #f3f3f3; */
+    /* height: 200px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .portrait-banner-text {
@@ -136,16 +135,40 @@
 .bio-text-box-small {
     margin-left: 20px;
     padding-right: 8vw;
+    width: 100px;
+    /* font-family: 'Alegreya' sans-serif; */
+    font-family: 'PlayfairDisplay';
 }
 
 .bio-text-box-large {
     margin-left: 20px;
     padding-right: 20px;
-    margin-top: 4vh;
+    /* margin-top: 4vh; */
     font-size: larger;
-    width: 50%;
+    width: 45%;
     overflow-y: auto;
     height: 840px;
+    font-family: 'PlayfairDisplay';
+    /* font-family: 'Alegreya' sans-serif; */
+}
+
+.testamonial-text-box-large {
+    margin-left: 20px;
+    padding-right: 20px;
+    margin-top: 4vh;
+    font-size: larger;
+    width: 40%;
+    overflow-y: auto;
+    height: 840px;
+    font-family: 'PlayfairDisplay';
+    /* font-family: 'Alegreya' sans-serif; */
+}
+
+.testamonial-text-box-small {
+    width: 32%;
+    font-family: 'PlayfairDisplay';
+    padding-right: 40px;
+    padding-left: 20px;
 }
 
 .bio-title-large {
@@ -160,33 +183,14 @@
     margin-top: 30px;
 }
 
-
-.new-hero-image-small {
-    height: 400px;
-    width: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-image: url("../../assets/20220729_092711.jpg");
-}
-
-.new-hero-image-large {
-    height: 80vh;
-    width: 60vw;
-    max-width: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-image: url("../../assets/20220729_092711.jpg");
-}
-
 .hero-title-large {
     font-size: 2.8em;
     line-height: 20px;
     margin-bottom: 40px;
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .bio-title-sub-large {
@@ -257,7 +261,7 @@
 }
 
 .hero-image-large {
-    height: 80vh;
+    height: 924px;
     width: 100%;
     max-height: 924px;
     max-width: 1640px;
@@ -265,4 +269,54 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../../assets/images/Restore.png");
+}
+
+.hero-image-small {
+    height: 200px;
+    width: 100%;
+    max-width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/Restore.png");
+}
+
+
+.mission-sub {
+    display: flex;
+    justify-content: center;
+    /* color: red; */
+    font-size: 1.4em;
+    font-weight: 900;
+    height: 40px;
+}
+
+.bio-popover {
+    width: 90%;
+    font-family: 'PlayfairDisplay' serif;
+    padding: 15px;
+}
+
+
+.blog-text {
+    /* font-family: 'Alegreya' serif; */
+    font-family: 'PlayfairDisplay' serif;
+}
+
+.blog-p {
+    text-indent: 5%;
+    font-family: 'PlayfairDisplay' serif;
+}
+
+.mat-divider {
+    border-top-width: 5px;
+    width: 50%;
+}
+
+.divider-small {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
 }

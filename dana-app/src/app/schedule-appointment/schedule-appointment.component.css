@@ -1,0 +1,130 @@
+.landscape {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.iphone-portrait {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.landscape {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+
+.small {
+    font-size: 5em;
+    margin-bottom: 30px;
+    line-height: 58px;
+}
+
+.large {
+    font-size: 8em;
+    margin-bottom: 50px;
+    line-height: 94px;
+}
+
+.small-sub1 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    /* margin-left: 14px; */
+    text-align: center;
+    width: 385px;
+}
+
+.small-sub1-1 {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.large-sub1 {
+    font-size: 1.9em;
+    margin-bottom: 30px;
+}
+
+
+
+.small-sub2 {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 4px;
+    width: 90%;
+}
+
+.large-sub2 {
+    font-size: 2em;
+    /* margin-left: 64px */
+}
+
+.small-contact-info {
+    margin-top: 12px;
+    text-align: center;
+    width: 90%;
+}
+
+.large-contact-info {
+    /* margin-left: 144px; */
+    margin-top: 12px;
+    text-align: center;
+}
+
+.small-form {
+    margin-left: 4px;
+}
+
+.large-form {
+    /* margin-left: 64px; */
+}
+
+.small-form-input {
+    width: 70%;
+    margin-top: 20px;
+    height: 40px;
+    font-size: xx-large;
+}
+
+.large-form-input {
+    width: 500px;
+    margin-top: 20px;
+    height: 40px;
+    font-size: xx-large;
+}
+
+
+.small-form-text {
+    width: 70%;
+    margin-top: 20px;
+    height: 200px;
+    font-size: xx-large;
+}
+
+.large-form-text {
+    width: 500px;
+    margin-top: 20px;
+    height: 200px;
+    font-size: xx-large;
+}
+
+
+.hero-image {
+    padding-top: 40px;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/landscape.jpg");
+}

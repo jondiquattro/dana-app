@@ -1,11 +1,11 @@
-import { ContactMeComponent } from './contact-me/contact-me.component';
+import { ScheduleAppointmentComponent } from './schedule-appointment/schedule-appointment.component';
 import { HeroPageComponent } from './hero-page/hero-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 
 const routes: Routes = [{ path: 'home', component: HeroPageComponent },
-{ path: 'contact-me', component: ContactMeComponent }, { path: '**', component: HeroPageComponent }];
+{ path: 'schedule-appointment', component: ScheduleAppointmentComponent }, { path: '**', component: HeroPageComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes),
