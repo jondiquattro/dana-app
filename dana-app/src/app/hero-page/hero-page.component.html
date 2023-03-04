@@ -32,184 +32,23 @@
             <div><button (click)="displayBio()">X</button></div>
         </div>
         <div class="bio-popover">
-            <div class="mission-sub">My Passion</div>
-            <p class="blog-p">To share, teach and encourage women in their health pursuits. Often we find ourselves in a
-                frustrating
-                cycle
-                of on again off again with dieting, never really getting anywhere and leaving us frustrated, tired,
-                and
-                often feeling hopeless.</p>
-            <p class="mission-sub">I am here to tell you there is HOPE!</p>
-            <p class="blog-p">My name is Dana Michelle, and I, too, was caught up in a vicious cycle of defeat. I didn’t
-                know how
-                to
-                eat,
-                what to eat, or how to accomplish my health and weight goals. I tried fad diets, high intensity
-                interval
-                training, weight lifting, cardio, starving myself, eating dry chicken, brown rice, and broccoli with
-                fake
-                fat-free butter spray. I tried it all. But as I grew in knowledge and learned what healthy eating
-                ACTUALLY
-                was, I learned that I can accomplish my goals, eat healthy, nourishing and satisfying meals, and
-                ENJOY
-                food,
-                which is very important to me.</p>
-            <p class="mission-sub">BEING Healthy, not just EATING HEALTHY is the Key!</p>
-            <p class="blog-p">I used to want to just LOOK good. I wasn’t really thinking about actually taking care of
-                myself. I
-                certainly
-                wasn’t thinking about the metabolic damage I was doing by my yo-yo diet extremist ways. But as I
-                aged, I
-                noticed that I forced my body to “look good” while causing damage to myself. It was very difficult
-                to
-                maintain and I felt awful. To maintain the weight loss, I exercised myself to death and ate foods
-                that
-                not
-                only tasted terrible, but barely kept me full or satisfied. I was hungry all the time! I could only
-                keep
-                up
-                these diet and exercise routines for so long, and then I would CRASH! Then I felt ashamed, AGAIN and
-                I
-                was
-                SO TIRED of going around and around the same mountain. I knew God had more for me than to be in a
-                constant
-                state of thinking about my weight and how I looked- going from highs to lows and constantly fixating
-                on
-                myself. I was SICK of thinking about MYSELF all the time. Can you relate?</p>
-            <p class="blog-p">Then God put a friend in my life who taught me to start thinking about food as nourishment
-                and about
-                my
-                overall health, not just how I looked, or if I was skinny enough, if my hips were thin enough, or if
-                I
-                weighed what a woman at 5’10 “should” weigh. She pointed me to research about how food nourished and
-                healed
-                my body, and how if I ate wholesome foods, then my skin, nails, hair, and even my brain would all
-                function
-                and flourish the way God designed it to, and my body would shed unhealthy weight. Yes, I said God.
-                He is
-                a
-                HUGE part of this journey! I started my journey looking into what God intended food to do</p>
-            <p class="blog-p">for us and I started to fall in love with what God made, HOW and WHY He made it, and WHAT
-                it does for
-                us
-                in
-                the most amazing ways! My foodie taste buds were OVERJOYED with what I was cooking up in the kitchen
-                as
-                it
-                was no longer plain, dry, low fat, and just plain gross franken-foods. I felt better; satisfied,
-                satiated,
-                <span class="mission-sub">I…FELT…SO…GOOD!</span> All the things improved-skin, hair, mood, ENERGY, I
-                could
-                go on and on. And, I
-                lost weight
-                without being miserable! It’s funny how getting back to what God intended for us changes things so
-                drastically! My family was much happier with mealtime as well!
-            </p>
-            <p class="blog-p">For the first time, I saw food for what it was: delicious abundance that God gave us so we
-                can have
-                healthy,
-                nourished and supported bodies. Completely satisfying. Wholesome and unaltered by man. Looking for a
-                health
-                restoring miracle? Eat Gods Good Foods!!!</p>
-            <p>I found my FOOD FREEDOM.</p>
-            <p class="blog-p">Praise God, my MIND started to transform. I was no longer looking at myself with shame and
-                disgust. I
-                saw
-                my
-                body in a whole new way-as the temple of the Holy Spirit.</p>
-            <p>I desire to help you find this as well. Let’s start this journey together, TODAY!!!!!</p>
+            <div *ngIf="!isTextSmall(textmode)">
+                <div *ngFor="let paragraph of this.dana.paragraphs">
+                    <p class={{paragraph.style}}>{{paragraph.text}}</p>
+                </div>
+            </div>
         </div>
     </app-mobile-pop-over>
     <div class="bio-text-box-{{textmode}}">
-        <!-- <div class="hero-title-{{textmode}}">My Mission</div> -->
-        <div class="mission-sub">My Mission</div>
-        <p class="blog-p">To help women who are frustrated with their current health to forge a healthy mindset for
-            themselves and their families towards true wellness for a lifetime of serving Christ.
-        </p>
         <div *ngIf="!isTextSmall(textmode)">
-            <div class="mission-sub">My Passion</div>
-            <p class="blog-p">To share, teach and encourage women in their health pursuits. Often we find ourselves in a
-                frustrating
-                cycle
-                of on again off again with dieting, never really getting anywhere and leaving us frustrated, tired, and
-                often feeling hopeless.</p>
-            <div class="mission-sub">
-                <p>I am here to tell you there is HOPE!</p>
+            <div *ngFor="let paragraph of this.dana.paragraphs">
+                <p class={{paragraph.style}}>{{paragraph.text}}</p>
             </div>
-            <p class="blog-p">My name is Dana Michelle, and I, too, was caught up in a vicious cycle of
-                defeat. I didn’t know how to
-                eat,
-                what to eat, or how to accomplish my health and weight goals. I tried fad diets, high intensity interval
-                training, weight lifting, cardio, starving myself, eating dry chicken, brown rice, and broccoli with
-                fake
-                fat-free butter spray. I tried it all. But as I grew in knowledge and learned what healthy eating
-                ACTUALLY
-                was, I learned that I can accomplish my goals, eat healthy, nourishing and satisfying meals, and ENJOY
-                food,
-                which is very important to me.</p>
-            <div class="mission-sub">BEING Healthy, not just EATING HEALTHY is the Key!</div>
-            <p class="blog-p">I used to want to just LOOK good. I wasn’t really thinking about actually taking care of
-                myself. I
-                certainly
-                wasn’t thinking about the metabolic damage I was doing by my yo-yo diet extremist ways. But as I aged, I
-                noticed that I forced my body to “look good” while causing damage to myself. It was very difficult to
-                maintain and I felt awful. To maintain the weight loss, I exercised myself to death and ate foods that
-                not
-                only tasted terrible, but barely kept me full or satisfied. I was hungry all the time! I could only keep
-                up
-                these diet and exercise routines for so long, and then I would CRASH! Then I felt ashamed, AGAIN and I
-                was
-                SO TIRED of going around and around the same mountain. I knew God had more for me than to be in a
-                constant
-                state of thinking about my weight and how I looked- going from highs to lows and constantly fixating on
-                myself. I was SICK of thinking about MYSELF all the time. Can you relate?</p>
-            <p class="blog-p">Then God put a friend in my life who taught me to start thinking about food as nourishment
-                and about my
-                overall health, not just how I looked, or if I was skinny enough, if my hips were thin enough, or if I
-                weighed what a woman at 5’10 “should” weigh. She pointed me to research about how food nourished and
-                healed
-                my body, and how if I ate wholesome foods, then my skin, nails, hair, and even my brain would all
-                function
-                and flourish the way God designed it to, and my body would shed unhealthy weight. Yes, I said God. He is
-                a
-                HUGE part of this journey! I started my journey looking into what God intended food to do</p>
-            <p class="blog-p">for us and I started to fall in love with what God made, HOW and WHY He made it, and WHAT
-                it does for us
-                in
-                the most amazing ways! My foodie taste buds were OVERJOYED with what I was cooking up in the kitchen as
-                it
-                was no longer plain, dry, low fat, and just plain gross franken-foods. I felt better; satisfied,
-                satiated,
-            </p>
-            <div class="mission-sub">I…FELT…SO…GOOD!</div>
-            <p>
-                All the things improved-skin, hair, mood, ENERGY, I
-                could
-                go on and on. And, I
-                lost weight
-                without being miserable! It’s funny how getting back to what God intended for us changes things so
-                drastically! My family was much happier with mealtime as well!
-            </p>
-            <p class="blog-p">For the first time, I saw food for what it was: delicious abundance that God gave us so we
-                can have
-                healthy,
-                nourished and supported bodies. Completely satisfying. Wholesome and unaltered by man. Looking for a
-                health
-                restoring miracle? Eat Gods Good Foods!!!</p>
-            <div class="mission-sub">I found my FOOD FREEDOM.</div>
-            <p class="blog-p">Praise God, my MIND started to transform. I was no longer looking at myself with shame and
-                disgust. I saw
-                my
-                body in a whole new way-as the temple of the Holy Spirit.</p>
-            <p>I desire to help you find this as well. Let’s start this journey together, TODAY!!!!!</p>
         </div>
 
         <div *ngIf="isTextSmall(textmode)">
             <button (click)="displayBio()" style="color: black;"><b>... continued</b></button>
         </div>
-
-
-
     </div>
     <div class="bio-image-{{textmode}}"></div>
 </div>
@@ -251,45 +90,11 @@
         </div>
         <div class="bio-popover">
             <div><b>Her Story...</b></div>
-            <p class="blog-p">I started this process as an exhausted mom of three. I tried to eat right
-                and
-                do all the healthy things but needed a nap daily(not that I actually got one, lol) to the point I would
-                fall
-                asleep driving or reading to the kids. </p>
-            <p class="blog-p">I was gaining weight even with my efforts! Like a couple pounds every
-                month gaining weight. My PCOS and hormones were out of control. I had lost weight before but my methods
-                weren't working.</p>
-            <p class="blog-p">By week 2 with this program I had more energy and felt better.</p>
-            <p class="blog-p">I didn't take supplements, and I was never hungry. The biggest thing was
-                deciding to take care of myself.
-                And then learning how God intended me to do that. I don't have time with my 3 littles to do things by
-                myself
-                often, but my little family can take a walk or make soup. I did planks and push ups while homeschooling.
-                Reading lessons in line, and the audio book while driving kids to the doctor. Honestly, I couldn't
-                safely
-                continue how I was living before I started Dana's program. And I figured I can do anything I need to for
-                a
-                short period of time while learning.</p>
-
-            <p class="blog-p">Dana and this program made it easy. Step by step and day by day I learned a
-                little bit. The more I made
-                these choices, the more time and energy I had. Now I can run and play with my kids!! Since meals are
-                planned
-                in advance we have time for board games. My kids are learning what kinds of foods God made for us and
-                changing their lives as well.</p>
-
-            <p class="blog-p">God sent Dana to me! Dana offered so much support. She uses scientific
-                studies,
-                down to earth explanations,
-                and Bible verses to inform and support you in being the best you can be. I ended my program climbing
-                uphill
-                1.3 miles to a waterfall while wearing my 2.5 yr old daughter! Never getting tired or out of breath. All
-                I
-                could think about was that not only can I make it through my day without falling asleep, but I now have
-                the
-                energy to play and enjoy my family!! I can't wait to see how this program continues to improve my life
-                and
-                journey over the next couple years.</p>
+            <div *ngIf="!isTextSmall(textmode)">
+                <div *ngFor="let paragraph of this.jennifer.paragraphs">
+                    <p class={{paragraph.style}}>{{paragraph.text}}</p>
+                </div>
+            </div>
         </div>
     </app-mobile-pop-over>
     <!-- end popover -->
@@ -307,40 +112,12 @@
             <button (click)="displayTestimonial()" style="color: black;"><b>... continued</b></button>
         </div>
         <div *ngIf="!isTextSmall(textmode)">
-            <p class="blog-p">I was gaining weight even with my efforts! Like a couple pounds every
-                month gaining weight. My PCOS and hormones were out of control. I had lost weight before but my methods
-                weren't working.</p>
-            <p class="blog-p">By week 2 with this program I had more energy and felt better.</p>
-            <p class="blog-p">I didn't take supplements, and I was never hungry. The biggest thing was
-                deciding to take care of myself.
-                And then learning how God intended me to do that. I don't have time with my 3 littles to do things by
-                myself
-                often, but my little family can take a walk or make soup. I did planks and push ups while homeschooling.
-                Reading lessons in line, and the audio book while driving kids to the doctor. Honestly, I couldn't
-                safely
-                continue how I was living before I started Dana's program. And I figured I can do anything I need to for
-                a
-                short period of time while learning.</p>
-
-            <p class="blog-p">Dana and this program made it easy. Step by step and day by day I learned a
-                little bit. The more I made
-                these choices, the more time and energy I had. Now I can run and play with my kids!! Since meals are
-                planned
-                in advance we have time for board games. My kids are learning what kinds of foods God made for us and
-                changing their lives as well.</p>
-
-            <p class="blog-p">God sent Dana to me! Dana offered so much support. She uses scientific
-                studies,
-                down to earth explanations,
-                and Bible verses to inform and support you in being the best you can be. I ended my program climbing
-                uphill
-                1.3 miles to a waterfall while wearing my 2.5 yr old daughter! Never getting tired or out of breath. All
-                I
-                could think about was that not only can I make it through my day without falling asleep, but I now have
-                the
-                energy to play and enjoy my family!! I can't wait to see how this program continues to improve my life
-                and
-                journey over the next couple years.</p>
+            <div *ngIf="!isTextSmall(textmode)">
+                <!-- *ngFor="let item of items | slice:1; let i = index; -->
+                <div *ngFor="let paragraph of this.jennifer.paragraphs | slice:1; let i = index">
+                    <p class={{this.jennifer.paragraphs[i].style}}>{{this.jennifer.paragraphs[i].text}}</p>
+                </div>
+            </div>
 
         </div>
 

@@ -1,6 +1,8 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { distinctUntilChanged } from 'rxjs';
+// const data: any = require('src/assets/testimonials.testimonials.json')
+import data from 'src/assets/json/testimonials.json';
 
 @Component({
   selector: 'app-hero-page',
@@ -15,6 +17,8 @@ export class HeroPageComponent implements OnInit {
   currentBreakpoint: string = '';
   showBio = false;
   showTestamonial: boolean = false;
+  dana: any = data.testimonials[1];
+  jennifer: any = data.testimonials[0];
 
   readonly breakpoint$ = this.breakpointObserver
     .observe([Breakpoints.Large, Breakpoints.Medium, Breakpoints.Small, Breakpoints.HandsetPortrait, Breakpoints.HandsetLandscape])
@@ -25,6 +29,7 @@ export class HeroPageComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
+    console.log(this.dana.paragraphs[0].style)
     this.breakpoint$.subscribe(() =>
       this.breakpointChanged()
     );

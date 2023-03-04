@@ -16,12 +16,12 @@ import { MobilePopOverComponent } from './mobile-pop-over/mobile-pop-over.compon
 import { ScriptService } from "./services/script.service";
 import { ScheduleAppointmentComponent } from './schedule-appointment/schedule-appointment.component';
 import { FoodPageComponent } from './food-page/food-page.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    // HeroComponent,
     HeroPageComponent,
     ContactMeComponent,
     HeroPageComponent,
@@ -29,6 +29,8 @@ import { FoodPageComponent } from './food-page/food-page.component';
     MobilePopOverComponent,
     ScheduleAppointmentComponent,
     FoodPageComponent,
+    TestimonialsComponent,
+
   ],
   imports: [
     MatTabsModule,
