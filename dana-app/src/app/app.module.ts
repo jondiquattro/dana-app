@@ -15,6 +15,7 @@ import { PopoverComponent } from './popover/popover.component';
 import { MobilePopOverComponent } from './mobile-pop-over/mobile-pop-over.component';
 import { ScriptService } from "./services/script.service";
 import { ScheduleAppointmentComponent } from './schedule-appointment/schedule-appointment.component';
+import { FoodPageComponent } from './food-page/food-page.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ScheduleAppointmentComponent } from './schedule-appointment/schedule-ap
     PopoverComponent,
     MobilePopOverComponent,
     ScheduleAppointmentComponent,
+    FoodPageComponent,
   ],
   imports: [
     MatTabsModule,
