@@ -6,10 +6,13 @@
         <div routerLink="/schedule-appointment" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link">
             SCHEDULE APPOINTMENT
         </div>
-        <div routerLink="/gods-good-food" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link">
+        <!-- <div routerLink="/gods-good-food" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link">
             GOD'S GOOD FOODS
-        </div>
+        </div> -->
         <a class="tab-link" href="https://form.jotform.com/223425903960052">FREE HEALTH ASSESSMENT</a>
+        <div routerLink="/testimonials" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link">
+            TESTIMONIALS
+        </div>
     </div>
 
 
@@ -43,24 +46,31 @@
     <app-popover [isActive]="isActive">
         <ul>
             <li>
-                <a routerLink="/home" ariaCurrentWhenActive="page" class="tab-link" (mouseenter)="over($event, 'home')"
-                    (mouseleave)="out($event)">HOME
+                <a routerLink="/home" ariaCurrentWhenActive="page" class="tab-link-small"
+                    (mouseenter)="over($event, 'home')" (mouseleave)="out($event)">HOME
                 </a>
             </li>
             <li>
 
                 <div routerLink="/schedule-appointment" routerLinkActive="active" ariaCurrentWhenActive="page"
-                    class="tab-link">
+                    class="tab-link-small">
                     SCHEDULE APPOINTMENT
                 </div>
             </li>
-            <li>
+            <!-- <li>
                 <div routerLink="/gods-good-food" routerLinkActive="active" ariaCurrentWhenActive="page"
                     class="tab-link">
                     GOD'S GOOD FOODS
                 </div>
+            </li> -->
+            <li> <a class="tab-link-small" href="https://form.jotform.com/223425903960052">FREE HEALTH ASSESSMENT</a>
             </li>
-            <li> <a class="tab-link" href="https://form.jotform.com/223425903960052">FREE HEALTH ASSESSMENT</a></li>
+            <li>
+                <div routerLink="/testimonials" routerLinkActive="active" ariaCurrentWhenActive="page"
+                    class="tab-link-small">
+                    TESTIMONIALS
+                </div>
+            </li>
         </ul>
     </app-popover>
 </ng-template>

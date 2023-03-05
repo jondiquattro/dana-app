@@ -1,1 +1,50 @@
-<p>testimonials works!</p>
+<div style="width:100%; display: flex; justify-content: center; margin-top: 20px;" *ngIf="!isTextSmall(textmode)">
+    <div class="hero-image-{{textmode}}">
+        <div class="content" style="display: flex; height: 100%; width: 100%; overflow-y: hidden;">
+            <div class="carousel-{{textmode}}" (click)="handleClick($event)">
+                <div class="name">
+                    {{this.selectedTestimonial.testimonial.name}}
+                </div>
+                <carousel [height]="500" [width]="500" [cellsToShow]="1" [loop]="true">
+                    <div *ngFor="let image of this.images" class="carousel-cell">
+                        <img src="{{image.path}}">
+                    </div>
+                </carousel>
+            </div>
+
+
+            <div class="blog-box-{{textmode}}">
+                <div *ngFor="let paragraph of selectedTestimonial.testimonial.paragraphs">
+                    <p class={{paragraph.style}}>{{paragraph.text}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div *ngIf="isTextSmall(textmode)">
+    <div style="width:100%; display: flex; justify-content: center; margin-top: 20px;">
+        <div class="hero-image-{{textmode}}">
+            <div class="bio-div">
+                <div class="carousel-{{textmode}}" (click)="handleClick($event)">
+                    <carousel [height]="250" [width]="250" [cellsToShow]="1" [loop]="true">
+                        <div *ngFor="let image of this.images" class="carousel-cell">
+                            <img src="{{image.path}}">
+                        </div>
+                    </carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 4000px;">
+        <div class="blog-box-{{textmode}}">
+            <div *ngFor="let paragraph of selectedTestimonial.testimonial.paragraphs">
+                <p class={{paragraph.style}}>{{paragraph.text}}</p>
+            </div>
+        </div>
+    </div>
+    <div style="height: 20px; width:100%"></div>
+</div>

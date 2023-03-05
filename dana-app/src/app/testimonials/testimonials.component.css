@@ -1,0 +1,131 @@
+.hero-image-large {
+    height: 924px;
+    width: 100%;
+    max-height: 924px;
+    max-width: 1640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/blank-hero.png");
+}
+
+.hero-image-small {
+    height: 500px;
+    width: 100%;
+    max-width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/blank-hero.png");
+}
+
+
+.carousel-large {
+    display: block;
+    margin-top: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.carousel-small {
+    /* display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; */
+}
+
+.bio-div {
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+}
+
+.testamonial-text-box-large {
+    margin-left: 20px;
+    padding-right: 20px;
+    margin-top: 4vh;
+    font-size: larger;
+    width: 40%;
+    overflow-y: auto;
+    height: 840px;
+    font-family: 'PlayfairDisplay';
+    /* font-family: 'Alegreya' sans-serif; */
+}
+
+.testamonial-text-box-small {
+    width: 32%;
+    font-family: 'PlayfairDisplay';
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+.blog-p {
+    text-indent: 5%;
+    font-family: 'PlayfairDisplay' serif;
+}
+
+.blog-bold {
+    font-weight: 900;
+    text-indent: 5%;
+    font-family: 'PlayfairDisplay' serif;
+}
+
+.mission-sub {
+    display: flex;
+    justify-content: center;
+    /* color: red; */
+    font-size: 1.4em;
+    font-weight: 900;
+    height: 40px;
+}
+
+.blog-sub {
+    /* color: red; */
+    font-size: 1.4em;
+    font-weight: 900;
+    height: 20px;
+}
+
+.blog-box-large {
+    display: block;
+    margin-top: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 50%;
+    overflow-y: auto;
+    font-family: 'PlayfairDisplay';
+    font-size: 1.3em;
+}
+
+.blog-box-small {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 100%;
+    overflow-y: visible;
+    font-family: 'PlayfairDisplay';
+    font-size: 1.3em;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    /* color: red; */
+    font-size: 1.6em;
+    font-weight: 900;
+    height: 40px;
+}
+
+.list {
+    list-style-position: inside;
+    display: list-item;
+}

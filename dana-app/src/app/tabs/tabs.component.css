@@ -21,6 +21,15 @@
 
 }
 
+.tab-link-small {
+    margin-right: 28px;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 24px;
+    font-family: 'PlayfairDisplay', 'Regular', sans-serif;
+
+}
+
 .center {
     display: flex;
     justify-content: center;

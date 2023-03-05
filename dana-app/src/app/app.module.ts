@@ -17,6 +17,8 @@ import { ScriptService } from "./services/script.service";
 import { ScheduleAppointmentComponent } from './schedule-appointment/schedule-appointment.component';
 import { FoodPageComponent } from './food-page/food-page.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDividerModule,
+    IvyCarouselModule,
+    FormsModule,
     MatIconModule
   ],
   providers: [ScriptService],

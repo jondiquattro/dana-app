@@ -1,7 +1,6 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { distinctUntilChanged } from 'rxjs';
-// const data: any = require('src/assets/testimonials.testimonials.json')
 import data from 'src/assets/json/testimonials.json';
 
 @Component({
@@ -29,7 +28,6 @@ export class HeroPageComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
-    console.log(this.dana.paragraphs[0].style)
     this.breakpoint$.subscribe(() =>
       this.breakpointChanged()
     );

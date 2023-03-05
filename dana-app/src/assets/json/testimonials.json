@@ -2,53 +2,37 @@
     "testimonials": [
         {
             "name": "Jennifer F",
+            "image": "assets/JFbefore.jpg",
             "paragraphs": [
                 {
-                    "style": {
-                        "large": "blog-p",
-                        "small": "blog-p"
-                    },
+                    "style": "blog-p",
                     "text": "I started this process as an exhausted mom of three. I tried to eat right and do all the healthy things but needed a nap daily(not that I actually got one, lol) to the point I would fall asleep driving or reading to the kids."
                 },
                 {
-                    "style": {
-                        "large": "blog-p",
-                        "small": "blog-p"
-                    },
+                    "style": "blog-p",
                     "text": "I was gaining weight even with my efforts! Like a couple pounds every month gaining weight. My PCOS and hormones were out of control. I had lost weight before but my methods weren't working."
                 },
                 {
-                    "style": {
-                        "large": "blog-p",
-                        "small": "blog-p"
-                    },
+                    "style": "blog-bold",
                     "text": "By week 2 with this program I had more energy and felt better."
                 },
                 {
-                    "style": {
-                        "large": "blog-p",
-                        "small": "blog-p"
-                    },
+                    "style": "blog-p",
                     "text": "I didn't take supplements, and I was never hungry. The biggest thing was deciding to take care of myself. And then learning how God intended me to do that. I don't have time with my 3 littles to do things by myself often, but my little family can take a walk or make soup. I did planks and push ups while homeschooling. Reading lessons in line, and the audio book while driving kids to the doctor. Honestly, I couldn't safely continue how I was living before I started Dana's program. And I figured I can do anything I need to for a short period of time while learning."
                 },
                 {
-                    "style": {
-                        "large": "blog-p",
-                        "small": "blog-p"
-                    },
+                    "style": "blog-p",
                     "text": "Dana and this program made it easy. Step by step and day by day I learned a little bit. The more I made these choices, the more time and energy I had. Now I can run and play with my kids!! Since meals are planned in advance we have time for board games. My kids are learning what kinds of foods God made for us and changing their lives as well."
                 },
                 {
-                    "style": {
-                        "large": "blog-p",
-                        "small": "blog-p"
-                    },
+                    "style": "blog-p",
                     "text": "God sent Dana to me! Dana offered so much support. She uses scientific studies, down to earth explanations, and Bible verses to inform and support you in being the best you can be. I ended my program climbing uphill 1.3 miles to a waterfall while wearing my 2.5 yr old daughter! Never getting tired or out of breath. All I could think about was that not only can I make it through my day without falling asleep, but I now have the energy to play and enjoy my family!! I can't wait to see how this program continues to improve my life and journey over the next couple years."
                 }
             ]
         },
         {
             "name": "Dana",
+            "image": "assets/images/dana-testimonial.jpg",
             "paragraphs": [
                 {
                     "style": "mission-sub",
@@ -103,7 +87,7 @@
                     "text": "For the first time, I saw food for what it was: delicious abundance that God gave us so we can have healthy, nourished and supported bodies. Completely satisfying. Wholesome and unaltered by man. Looking for a health restoring miracle? Eat Gods Good Foods!!!"
                 },
                 {
-                    "style": "blog-p",
+                    "style": "mission-sub",
                     "text": "I found my FOOD FREEDOM."
                 },
                 {
@@ -111,11 +95,54 @@
                     "text": "Praise God, my MIND started to transform. I was no longer looking at myself with shame and disgust. I saw my body in a whole new way-as the temple of the Holy Spirit."
                 },
                 {
-                    "style": {
-                        "large": "",
-                        "small": ""
-                    },
+                    "style": "",
                     "text": "I desire to help you find this as well. Let's start this journey together, TODAY!!!!!"
+                }
+            ]
+        },
+        {
+            "name": "Kary L",
+            "image": "assets/images/karyl.jpg",
+            "paragraphs": [
+                {
+                    "style": "blog-p",
+                    "text": "Turning 65 caused me to reflect on health and wellness and living life in complete surrender to Jesus, which included surrendering my food choices to His authority. This is the main reason I chose to go through Dana’s Wellness Coaching program. I was getting confused about all the different choices and information about what’s healthy and what’s not. And it was fighting against long held beliefs the “healthy nutrition and lifestyle.” I loved that Dana’s program was God centered and brought me back basics; eating whole food, grown in healthy ways."
+                },
+                {
+                    "style": "blog-sub",
+                    "text": "In 12 weeks I learned:"
+                },
+                {
+                    "style": "list",
+                    "text": "30 minutes is enough time to fit in a workout at home"
+                },
+                {
+                    "style": "list",
+                    "text": "I’ve been missing out on many tasty and nutritious vegetables."
+                },
+                {
+                    "style": "list",
+                    "text": "I understand the why behind the pantry purge items that are now eliminated changing a lifetime of wrong thinking about nutrition and wellness."
+                },
+                {
+                    "style": "list",
+                    "text": "Added new delicious go to recipes that are supportive"
+                },
+                {
+                    "style": "list",
+                    "text": "I lost 7 lbs."
+                },
+                {
+                    "style": "list",
+                    "text": "I’ve become more of my own health advocate because I believe that the quality of the food I eat impacts my health and well being"
+                },
+                {
+                    "style": "list",
+                    "text": "Keep moving throughout my day. Primal essential movements make the “work” easier. After several weeks of doing PEM’s throughout the day, I spent a half day in the garden – which normally would have left me sore and stiff the next day. Surprise it didn’t."
+                },
+                {
+                    "style": "blog-p",
+                    "text": "Thank you Dana for your guidance for leading me on the path toward health, wellness and living life in complete surrender to Jesus."
                 }
             ]
         }

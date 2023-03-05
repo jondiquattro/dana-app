@@ -1,3 +1,4 @@
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FoodPageComponent } from './food-page/food-page.component';
 import { ScheduleAppointmentComponent } from './schedule-appointment/schedule-appointment.component';
 import { HeroPageComponent } from './hero-page/hero-page.component';
@@ -7,7 +8,8 @@ import { MatIconModule } from '@angular/material/icon';
 
 const routes: Routes = [{ path: 'home', component: HeroPageComponent },
 { path: 'schedule-appointment', component: ScheduleAppointmentComponent },
-{ path: 'gods-good-food', component: FoodPageComponent },
+// { path: 'gods-good-food', component: FoodPageComponent },
+{ path: 'testimonials', component: TestimonialsComponent },
 { path: '**', component: HeroPageComponent }];
 
 @NgModule({
