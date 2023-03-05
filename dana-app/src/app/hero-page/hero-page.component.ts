@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { distinctUntilChanged } from 'rxjs';
 import data from 'src/assets/json/testimonials.json';
 
+
 @Component({
   selector: 'app-hero-page',
   templateUrl: './hero-page.component.html',
@@ -46,6 +47,11 @@ export class HeroPageComponent implements OnInit {
     this.showTestamonial = !this.showTestamonial;
   }
 
+  routeClick(url: string) {
+
+    window.open(url, '_blank')
+  }
+
   renderTabs() {
     if (!this.breakpointObserver.isMatched(Breakpoints.HandsetPortrait) && !this.breakpointObserver.isMatched(Breakpoints.HandsetLandscape)) {
       return true;
@@ -53,6 +59,8 @@ export class HeroPageComponent implements OnInit {
       return false;
     }
   }
+
+
 
   private breakpointChanged() {
     if (this.breakpointObserver.isMatched(Breakpoints.Large)) {

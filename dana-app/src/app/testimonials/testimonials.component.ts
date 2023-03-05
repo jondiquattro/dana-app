@@ -37,7 +37,6 @@ export class TestimonialsComponent implements OnInit {
   }
 
   handleClick(e: any) {
-    console.log(e.target)
     if (e.target.className.includes('next') && !e.target.className.includes('disabled')) {
       this.selectedTestimonial = this.images[this.selectedTestimonial.index + 1]
     }

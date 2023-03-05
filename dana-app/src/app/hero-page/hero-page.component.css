@@ -320,3 +320,25 @@
     margin-bottom: 20px;
     width: 100%;
 }
+
+.tab-link {
+    padding-top: 5px;
+    height: 35px;
+    font-family: 'PlayfairDisplay', 'Regular', sans-serif;
+    border-radius: 5px
+}
+
+.tab-link:hover {
+
+    background-color: lightgray;
+}
+
+.mat-button.mat-blue {
+    color: blue;
+}
+
+.mat-raised-button.mat-blue,
+.mat-flat-button.mat-blue {
+    background-color: blue;
+    color: white;
+}

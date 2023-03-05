@@ -5,11 +5,18 @@
 </div>
 
 <div class="offerings-box-{{textmode}}">
-
-
-    <div class="offerings-{{textmode}}">TESTIMONIALS</div>
-    <div class="offerings-{{textmode}}">FREE HEALTH ASSESSMENT</div>
-    <div class="offerings-{{textmode}}">WORK OUT WITH ME</div>
+    <div routerLink="/testimonials" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link"
+        class="offerings-{{textmode}}">
+        <div style="margin: 5px;">TESTIMONIALS</div>
+    </div>
+    <div class="offerings-{{textmode}}" (click)="routeClick('https://form.jotform.com/223425903960052')"
+        class="tab-link">
+        <div style="margin: 5px">ASSESSMENT</div>
+    </div>
+    <div routerLink="/schedule-appointment" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link"
+        class="offerings-{{textmode}}">
+        <div style="margin: 5px">WORK OUT WITH ME</div>
+    </div>
 
 </div>
 
@@ -104,23 +111,18 @@
     <div class="testamonial-text-box-{{textmode}}">
         <div class="hero-title-{{textmode}}">Jennifer</div>
         <div><b>Her Story...</b></div>
-        <p class="blog-p">I started this process as an exhausted mom of three. I tried to eat right and
+        <p *ngIf="isTextSmall(textmode)" class="blog-p">I started this process as an exhausted mom of three. I tried to
+            eat right and
             do all the healthy things but needed a nap daily(not that I actually got one, lol) to the point I would fall
             asleep driving or reading to the kids. </p>
-
-        <div *ngIf="isTextSmall(textmode)">
-            <button (click)="displayTestimonial()" style="color: black;"><b>... continued</b></button>
-        </div>
-
-        <!-- <div *ngIf="!isTextSmall(textmode)">
-            *ngFor="let item of items | slice:1; let i = index;
+        <div *ngIf="!isTextSmall(textmode)">
             <div *ngFor="let paragraph of this.jennifer.paragraphs">
                 <p class={{paragraph.style}}>{{paragraph.text}}</p>
             </div>
-        </div> -->
-
-
-
+        </div>
+        <div *ngIf="isTextSmall(textmode)">
+            <button (click)="displayTestimonial()" style="color: black;"><b>... continued</b></button>
+        </div>
     </div>
 
 </div>
