@@ -30,9 +30,9 @@
             <div><button (click)="displayBio()">X</button></div>
         </div>
         <div class="bio-popover">
-            <div *ngIf="!isTextSmall(textmode)">
+            <div *ngIf="isTextSmall(textmode)">
                 <div *ngFor="let paragraph of this.dana.paragraphs">
-                    <p class={{paragraph.style}}>{{paragraph.text}}</p>
+                    <p class={{this.paragraph.style}}>{{this.paragraph.text}}</p>
                 </div>
             </div>
         </div>
@@ -45,6 +45,8 @@
         </div>
 
         <div *ngIf="isTextSmall(textmode)">
+            <p class={{this.dana.paragraphs[0].style}}>{{this.dana.paragraphs[0].text}}</p>
+            <p class={{this.dana.paragraphs[1].style}}>{{this.dana.paragraphs[1].text}}</p>
             <button (click)="displayBio()" style="color: black;"><b>... continued</b></button>
         </div>
     </div>
@@ -88,7 +90,7 @@
         </div>
         <div class="bio-popover">
             <div><b>Her Story...</b></div>
-            <div *ngIf="!isTextSmall(textmode)">
+            <div *ngIf="isTextSmall(textmode)">
                 <div *ngFor="let paragraph of this.jennifer.paragraphs">
                     <p class={{paragraph.style}}>{{paragraph.text}}</p>
                 </div>
@@ -109,15 +111,15 @@
         <div *ngIf="isTextSmall(textmode)">
             <button (click)="displayTestimonial()" style="color: black;"><b>... continued</b></button>
         </div>
-        <div *ngIf="!isTextSmall(textmode)">
-            <div *ngIf="!isTextSmall(textmode)">
-                <!-- *ngFor="let item of items | slice:1; let i = index; -->
-                <div *ngFor="let paragraph of this.jennifer.paragraphs | slice:1; let i = index">
-                    <p class={{this.jennifer.paragraphs[i].style}}>{{this.jennifer.paragraphs[i].text}}</p>
-                </div>
-            </div>
 
-        </div>
+        <!-- <div *ngIf="!isTextSmall(textmode)">
+            *ngFor="let item of items | slice:1; let i = index;
+            <div *ngFor="let paragraph of this.jennifer.paragraphs">
+                <p class={{paragraph.style}}>{{paragraph.text}}</p>
+            </div>
+        </div> -->
+
+
 
     </div>
 

@@ -28,6 +28,7 @@ export class HeroPageComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) { }
 
   ngOnInit(): void {
+    console.log(this.dana.paragraphs[0].text);
     this.breakpoint$.subscribe(() =>
       this.breakpointChanged()
     );
