@@ -44,3 +44,4 @@ Thumbs.db
 /src/scripts/dana.pem
 ./src/scripts/dana.pem
 ./src/scripts/*
+./src/scripts/deploy.sh
