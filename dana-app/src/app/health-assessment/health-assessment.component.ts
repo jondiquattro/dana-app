@@ -1,28 +1,19 @@
-import { MatIconModule } from '@angular/material/icon';
-
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { distinctUntilChanged, tap } from 'rxjs/operators';
-
-interface Hover {
-  home: boolean;
-  book: boolean;
-  contact: boolean;
-}
+import { distinctUntilChanged } from 'rxjs';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
-  selector: 'app-tabs',
-  templateUrl: './tabs.component.html',
-  styleUrls: ['./tabs.component.css']
+  selector: 'app-health-assessment',
+  templateUrl: './health-assessment.component.html',
+  styleUrls: ['./health-assessment.component.css']
 })
-export class NavBarComponent {
+export class HealthAssessmentComponent implements OnInit {
 
   align: string = 'center';
+  textmode: string = 'large';
   Breakpoints = Breakpoints;
   currentBreakpoint: string = '';
-  hover = { home: false, contact: false, book: false };
-  isActive = false;
-  closeButton = false;
 
   readonly breakpoint$ = this.breakpointObserver
     .observe([Breakpoints.Large, Breakpoints.Medium, Breakpoints.Small, Breakpoints.HandsetPortrait, Breakpoints.HandsetLandscape])
@@ -32,53 +23,35 @@ export class NavBarComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) { }
 
-  toggle() {
-    this.isActive = !this.isActive;
-  }
-
-  close() {
-    console.log("closing");
-    this.isActive = false;
-  }
-
   ngOnInit(): void {
     this.breakpoint$.subscribe(() =>
       this.breakpointChanged()
     );
   }
 
+  isTextSmall(textMode: string) {
+    return textMode == 'small'
+  }
+
+  routeClick(url: string) {
+    window.open(url, '_blank')
+  }
 
   private breakpointChanged() {
-    this.align = 'center';
-
     if (this.breakpointObserver.isMatched(Breakpoints.Large)) {
       this.currentBreakpoint = Breakpoints.Large;
+      this.textmode = "large";
     } else if (this.breakpointObserver.isMatched(Breakpoints.Medium)) {
       this.currentBreakpoint = Breakpoints.Medium;
+      this.textmode = "large";
     } else if (this.breakpointObserver.isMatched(Breakpoints.HandsetLandscape)) {
       this.currentBreakpoint = Breakpoints.HandsetLandscape;
+      this.textmode = "large";
     }
     else if (this.breakpointObserver.isMatched(Breakpoints.HandsetPortrait)) {
       this.align = 'iphone-portrait';
+      this.textmode = "small";
       this.currentBreakpoint = Breakpoints.HandsetPortrait;
     }
   }
-
-  over(e: Event, type: string) {
-    this.hover[type as keyof Hover] = true;
-  }
-
-  out(event: Event) {
-    console.log(event);
-  }
-
-
-  renderTabs() {
-    if (!this.breakpointObserver.isMatched(Breakpoints.HandsetPortrait) && !this.breakpointObserver.isMatched(Breakpoints.HandsetLandscape)) {
-      return true;
-    } else {
-      return false;
-    }
-  }
 }
-

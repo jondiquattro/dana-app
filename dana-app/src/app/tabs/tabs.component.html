@@ -9,7 +9,11 @@
         <!-- <div routerLink="/gods-good-food" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link">
             GOD'S GOOD FOODS
         </div> -->
-        <a class="tab-link" href="https://form.jotform.com/223425903960052">FREE HEALTH ASSESSMENT</a>
+
+        <div routerLink="/health-assessment" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link">
+            FREE HEALTH ASSESSMENT
+        </div>
+
         <div routerLink="/testimonials" routerLinkActive="active" ariaCurrentWhenActive="page" class="tab-link">
             TESTIMONIALS
         </div>
@@ -43,7 +47,7 @@
     </div>
 
 
-    <app-popover [isActive]="isActive">
+    <app-popover [isActive]="isActive" (click)="close()">
         <ul>
             <li>
                 <a routerLink="/home" ariaCurrentWhenActive="page" class="tab-link-small"
@@ -63,7 +67,11 @@
                     GOD'S GOOD FOODS
                 </div>
             </li> -->
-            <li> <a class="tab-link-small" href="https://form.jotform.com/223425903960052">FREE HEALTH ASSESSMENT</a>
+            <li>
+                <div routerLink="/health-assessment" routerLinkActive="active" ariaCurrentWhenActive="page"
+                    class="tab-link-small">
+                    FREE HEALTH ASSESSMENT
+                </div>
             </li>
             <li>
                 <div routerLink="/testimonials" routerLinkActive="active" ariaCurrentWhenActive="page"

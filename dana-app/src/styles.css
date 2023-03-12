@@ -41,18 +41,32 @@ body {
     src: url('/assets/fonts/PlayfairDisplay.ttf');
 }
 
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/assets/fonts/Merriweather.ttf');
+}
+
+@font-face {
+    font-family: 'Arsenal';
+    src: url('/assets/fonts/Arsenal/Arsenal-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Grotesque';
+    src: url('/assets/fonts/Darker_Grotesque/static/DarkerGrotesque-Light.ttf');
+}
 
 @media screen and (min-width: 1000px) {
     .bodyroot {
-        padding-left: 150px;
-        padding-right: 150px;
+        /* padding-left: 150px;
+        padding-right: 150px; */
     }
 }
 
 html,
 body {
-    height: 100%;
-    width: 104%;
+    /* height: 100%;
+    width: 104%; */
 }
 
 body {

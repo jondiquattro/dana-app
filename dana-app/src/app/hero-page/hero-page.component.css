@@ -36,21 +36,23 @@
 }
 
 .scripture-break-large {
-    font-size: 1.8vw;
-    margin-top: 20px;
-    font-family: 'Tangerine';
+    font-size: 2.8em;
+    font-family: 'Merriweather';
+    line-height: 1;
+    margin: 20px;
+    ;
 }
 
 .scripture-break-small {
-    font-size: 4vw;
-    font-family: 'Tangerine';
-    padding-left: 25px;
-    padding-right: 25px
+    font-size: 1.4em;
+    font-family: 'Merriweather';
+    margin: 20px;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    line-height: 1;
 }
 
 .offerings-box-large {
-    /* background-color: #f3f3f3; */
-    /* height: 200px; */
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -261,10 +263,13 @@
 }
 
 .hero-image-large {
-    height: 924px;
+    /* height: 924px; */
+    height: 40vw;
     width: 100%;
     max-height: 924px;
+    min-height: 200px;
     max-width: 1640px;
+    min-width: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

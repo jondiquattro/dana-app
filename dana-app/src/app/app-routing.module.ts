@@ -5,10 +5,12 @@ import { HeroPageComponent } from './hero-page/hero-page.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { HealthAssessmentComponent } from './health-assessment/health-assessment.component';
 
 const routes: Routes = [{ path: 'home', component: HeroPageComponent },
 { path: 'schedule-appointment', component: ScheduleAppointmentComponent },
 // { path: 'gods-good-food', component: FoodPageComponent },
+{ path: 'health-assessment', component: HealthAssessmentComponent },
 { path: 'testimonials', component: TestimonialsComponent },
 { path: '**', component: HeroPageComponent }];
 

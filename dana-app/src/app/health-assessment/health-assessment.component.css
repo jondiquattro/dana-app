@@ -1,0 +1,132 @@
+.hero-image-large {
+    height: 924px;
+    width: 100%;
+    max-height: 924px;
+    max-width: 1640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/health-hero.jpg");
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.hero-image-small {
+    height: 800px;
+    width: 100%;
+    max-width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/health-hero.jpg");
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.content-box {
+    background-color: #d66fa3;
+    height: 80%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+}
+
+
+.content-box-small {
+    background-color: #d66fa3;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.hope-text {
+    align-items: center;
+    font-size: calc(1rem + 1.8em);
+    font-weight: 900;
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arsenal';
+    margin-bottom: 1em;
+
+}
+
+.hope-text-mobile {
+    align-items: center;
+    font-size: calc(1rem + 1em);
+    font-weight: 900;
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arsenal';
+    margin-bottom: 1em;
+
+}
+
+
+.quote-text {
+    align-items: center;
+    font-size: calc(1rem + 1em);
+    font-weight: 900;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+    font-family: 'Grotesque';
+
+}
+
+.quote-text-mobile {
+    align-items: center;
+    font-size: calc(1rem + .6em);
+    font-weight: 900;
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    font-family: 'Grotesque';
+
+}
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.dynamic-text-box {
+    height: fit-content;
+    padding: 1px;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+
+.button {
+    background-color: #fec6dc;
+    font-size: calc(1rem + .5em);
+    font-family: 'Arsenal';
+    font-weight: 900;
+}
+
+.button-mobile {
+    width: 80%;
+    background-color: #fec6dc;
+    font-size: calc(1rem + .5em);
+    line-height: normal;
+
+}
+
+.mobile-button-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arsenal';
+    font-weight: 900;
+}

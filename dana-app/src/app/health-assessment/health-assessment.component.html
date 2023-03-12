@@ -1,0 +1,64 @@
+<div style="font-size: 12px;" *ngIf="!isTextSmall(textmode)">
+    <div style="width:100%; display: flex; justify-content: center; margin-top: 20px;">
+        <div class="hero-image-{{textmode}}">
+            <mat-card class="content-box">
+                <mat-card-content class="center-box">
+                    <div class="hope-text">
+                        <div class="dynamic-text-box">HOPE</div>
+                        <div class="dynamic-text-box">FOR</div>
+                        <div class="dynamic-text-box">TODAY</div>
+                    </div>
+                    <div class="quote-text">
+                        <div class="dynamic-text-box">YOU CAN'T GO BACK AND</div>
+                        <div class="dynamic-text-box">CHANGE THE BEGINNING, BUT</div>
+                        <div class="dynamic-text-box">YOU CAN START WHERE YOU</div>
+                        <div class="dynamic-text-box">ARE AND CHANGE THE</div>
+                        <div class="dynamic-text-box">ENDING.</div>
+                        <div class="dynamic-text-box">C.S LEWIS</div>
+                    </div>
+                    <div class="hope-text">
+                        <button mat-raised-button class="button"
+                            (click)="routeClick('https://form.jotform.com/223425903960052')">
+                            <div>TAKE HEALTH</div>
+                            <div>ASSESSMENT</div>
+                        </button>
+                    </div>
+
+                </mat-card-content>
+
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+<div style="width:100%; display: flex; justify-content: center; margin-top: 20px; font-size: 12px;"
+    *ngIf="isTextSmall(textmode)">
+    <div class="hero-image-{{textmode}}">
+        <mat-card class="content-box-small">
+            <mat-card-content class="center-box">
+                <div class="hope-text-mobile">
+                    <div class="dynamic-text-box">HOPE</div>
+                    <div class="dynamic-text-box">FOR</div>
+                    <div class="dynamic-text-box">TODAY</div>
+                </div>
+                <div class="quote-text-mobile">
+                    <div class="dynamic-text-box">YOU CAN'T GO BACK AND</div>
+                    <div class="dynamic-text-box">CHANGE THE BEGINNING, BUT</div>
+                    <div class="dynamic-text-box">YOU CAN START WHERE YOU</div>
+                    <div class="dynamic-text-box">ARE AND CHANGE THE</div>
+                    <div class="dynamic-text-box">ENDING.</div>
+                    <div class="dynamic-text-box">C.S LEWIS</div>
+                </div>
+
+                <div class="mobile-button-align">
+                    <button mat-raised-button class="button-mobile"
+                        (click)="routeClick('https://form.jotform.com/223425903960052')">
+                        <div>TAKE HEALTH</div>
+                        <div>ASSESSMENT</div>
+                    </button>
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+</div>

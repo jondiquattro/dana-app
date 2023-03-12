@@ -1,3 +1,4 @@
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,6 +20,8 @@ import { FoodPageComponent } from './food-page/food-page.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { FormsModule } from "@angular/forms";
+import { HealthAssessmentComponent } from './health-assessment/health-assessment.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,7 @@ import { FormsModule } from "@angular/forms";
     ScheduleAppointmentComponent,
     FoodPageComponent,
     TestimonialsComponent,
+    HealthAssessmentComponent,
 
   ],
   imports: [
@@ -42,7 +46,9 @@ import { FormsModule } from "@angular/forms";
     MatDividerModule,
     IvyCarouselModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [ScriptService],
   bootstrap: [AppComponent]
