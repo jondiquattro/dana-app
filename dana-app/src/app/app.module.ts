@@ -22,6 +22,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { FormsModule } from "@angular/forms";
 import { HealthAssessmentComponent } from './health-assessment/health-assessment.component';
 import { MatButtonModule } from '@angular/material/button';
+import { RestoreComponent } from './restore/restore.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { MatButtonModule } from '@angular/material/button';
     FoodPageComponent,
     TestimonialsComponent,
     HealthAssessmentComponent,
+    RestoreComponent,
 
   ],
   imports: [

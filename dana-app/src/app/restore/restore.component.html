@@ -1,0 +1,64 @@
+<div style="font-size: 12px;" *ngIf="!isTextSmall(textmode)">
+    <div style="width:100%; display: flex; justify-content: center; margin-top: 20px;">
+        <div class="main-content-{{textmode}}">
+            <div class="content">
+                <!-- side div with image -->
+                <div class="dana-image">
+                    <img src="../../assets/images/dana-testimonial.jpg" class="image-size" />
+                    <div>RESTORE</div>
+                </div>
+                <!-- side div with text -->
+                <div class="appointment">
+                    <div class="appointment-text">
+                        <div class="appointment-text-spacing">
+                            Schedule an
+                        </div>
+                        <div class="appointment-text-spacing">
+                            Appointment
+                        </div>
+                    </div>
+                    <div class="wreath-image">
+                        <button mat-raised-button class="button"
+                            (click)="routeClick('https://calendly.com/danamichellewellness')">
+                            <div class="button-text">BOOK A DISCOVERY</div>
+                            <div class="button-text">CALL</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div style="width:100%; display: flex; justify-content: center; margin-top: 20px; font-size: 12px;"
+    *ngIf="isTextSmall(textmode)">
+    <div class="main-content-{{textmode}}">
+        <div class="content-small">
+            <!-- side div with image -->
+            <div class="dana-image-small">
+                <img src="../../assets/images/dana-testimonial.jpg" class="image-size" />
+                <div class="restore-small">RESTORE</div>
+            </div>
+            <!-- side div with text -->
+            <div class="appointment-small">
+                <div class="appointment-text-small">
+                    <div class="appointment-text-spacing">
+                        Schedule an
+                    </div>
+                    <div class="appointment-text-spacing">
+                        Appointment
+                    </div>
+                </div>
+                <div class="wreath-image">
+                    <button mat-raised-button class="button"
+                        (click)="routeClick('https://calendly.com/danamichellewellness')">
+                        <div class="button-text">BOOK A DISCOVERY</div>
+                        <div class="button-text">CALL</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

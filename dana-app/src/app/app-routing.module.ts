@@ -6,9 +6,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { HealthAssessmentComponent } from './health-assessment/health-assessment.component';
+import { RestoreComponent } from './restore/restore.component';
 
 const routes: Routes = [{ path: 'home', component: HeroPageComponent },
-{ path: 'schedule-appointment', component: ScheduleAppointmentComponent },
+{ path: 'schedule-appointment', component: RestoreComponent },
 // { path: 'gods-good-food', component: FoodPageComponent },
 { path: 'health-assessment', component: HealthAssessmentComponent },
 { path: 'testimonials', component: TestimonialsComponent },

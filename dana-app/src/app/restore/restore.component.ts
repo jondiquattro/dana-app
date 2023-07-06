@@ -3,12 +3,11 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { distinctUntilChanged } from 'rxjs';
 
 @Component({
-  selector: 'app-health-assessment',
-  templateUrl: './health-assessment.component.html',
-  styleUrls: ['./health-assessment.component.css']
+  selector: 'app-restore',
+  templateUrl: './restore.component.html',
+  styleUrls: ['./restore.component.css']
 })
-export class HealthAssessmentComponent implements OnInit {
-
+export class RestoreComponent implements OnInit {
   align: string = 'center';
   textmode: string = 'large';
   Breakpoints = Breakpoints;
